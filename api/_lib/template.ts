@@ -1,9 +1,7 @@
 import { readFileSync } from 'fs';
 import { sanitizeHtml } from './sanitizer';
 import { ParsedRequest } from './types';
-const twemoji = require('twemoji');
 const twOptions = { folder: 'svg', ext: '.svg' };
-const emojify = (text: string) => twemoji.parse(text, twOptions);
 
 const notoSerif = readFileSync(`${__dirname}/../_fonts/NotoSerifJP-ExtraLight.woff2`).toString('base64');
 
@@ -78,7 +76,7 @@ export function getHtml(parsedReq: ParsedRequest) {
         ${getCss()}
     </style>
     <body>
-        <div class="heading"><span>${emojify(sanitizeHtml(text))}</span></div>
+        <div class="heading"><span>${sanitizeHtml(text)}</span></div>
         <div class="text">
             <div class="ja">${sanitizeHtml(cool ? 'お洒落だね' : '温かいね')}</div>
             <div class="en">${sanitizeHtml(cool ? `It's cool` : `It's not cool`)}</div>
