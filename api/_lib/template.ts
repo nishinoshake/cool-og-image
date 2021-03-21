@@ -25,7 +25,7 @@ function getCss() {
         font-weight: 200;
     }
     .heading {
-        margin-bottom: 40px;
+        margin-bottom: 48px;
         padding: 0 200px;
         overflow: hidden;
         display: flex;
@@ -33,13 +33,13 @@ function getCss() {
         font-size: 64px;
         font-style: normal;
         color: #222;
-        line-height: 1.4;
+        line-height: 1.1;
     }
     .heading span {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
-        padding: 0.2em;
+        padding: 2px 4px;
         color: #fff;
         background-color: #222;
     }
@@ -47,19 +47,13 @@ function getCss() {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .ja {
         font-size: 50px;
         font-style: normal;
         color: #444;
-        line-height: 1.4;
+        line-height: 1.2;
     }
     .en {
         margin-left: 0.5em;
-        font-size: 50px;
-        font-style: normal;
-        color: #444;
-        line-height: 1.4;
     }
     `;
 }
