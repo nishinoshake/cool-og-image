@@ -25,12 +25,12 @@ function getCss() {
         font-weight: 200;
     }
     .heading {
-        margin-bottom: 84px;
-        padding: 0 200px;
+        margin-bottom: 80px;
+        padding: 0 160px;
         overflow: hidden;
         display: flex;
         justify-content: center;
-        font-size: 100px;
+        font-size: 92px;
         font-style: normal;
         color: #222;
         line-height: 1.1;
@@ -47,7 +47,7 @@ function getCss() {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 80px;
+        font-size: 76px;
         font-style: normal;
         color: #444;
         line-height: 1.2;
