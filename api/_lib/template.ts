@@ -25,32 +25,38 @@ function getCss() {
         font-weight: 200;
     }
     .heading {
-        margin-bottom: 80px;
+        margin-bottom: 70px;
         padding: 0 160px;
         overflow: hidden;
         display: flex;
         justify-content: center;
-        font-size: 92px;
+        font-size: 80px;
+        color: #333;
         font-style: normal;
         color: #222;
-        line-height: 1.1;
+        line-height: 1.3;
     }
     .heading span {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         padding: 2px 4px;
-        color: #fff;
-        background-color: #222;
+
     }
     .text {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 76px;
+        font-size: 72px;
         font-style: normal;
-        color: #444;
         line-height: 1.2;
+    }
+    .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #222;
     }
     .en {
         margin-left: 0.5em;
@@ -71,8 +77,10 @@ export function getHtml(parsedReq: ParsedRequest) {
     <body>
         <div class="heading"><span>${sanitizeHtml(text)}</span></div>
         <div class="text">
-            <div class="ja">${sanitizeHtml(cool ? 'お洒落だね' : '温かいね')}</div>
-            <div class="en">${sanitizeHtml(cool ? `It's cool` : `It's not cool`)}</div>
+            <div class="inner">
+                <div class="ja">${sanitizeHtml(cool ? 'お洒落だね' : '温かいね')}</div>
+                <div class="en">${sanitizeHtml(cool ? `It's cool` : `It's not cool`)}</div>
+            </div>
         </div>
     </body>
 </html>`;
