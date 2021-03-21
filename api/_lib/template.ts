@@ -1,7 +1,6 @@
 import { readFileSync } from 'fs';
 import { sanitizeHtml } from './sanitizer';
 import { ParsedRequest } from './types';
-const twOptions = { folder: 'svg', ext: '.svg' };
 
 const notoSerif = readFileSync(`${__dirname}/../_fonts/NotoSerifJP-ExtraLight.woff2`).toString('base64');
 
