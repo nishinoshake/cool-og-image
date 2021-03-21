@@ -29,7 +29,7 @@ function getCss() {
     }
     .heading {
         margin-bottom: 40px;
-        padding: 0 240px;
+        padding: 0 200px;
         overflow: hidden;
         display: flex;
         justify-content: center;
