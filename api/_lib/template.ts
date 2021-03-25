@@ -34,7 +34,7 @@ function getCss() {
         color: #333;
         font-style: normal;
         color: #222;
-        line-height: 1.4;
+        line-height: 1.6;
     }
     .heading span {
         display: -webkit-box;
@@ -69,6 +69,9 @@ function getCss() {
 
 export function getHtml(parsedReq: ParsedRequest) {
     const { text, cool } = parsedReq;
+
+    console.log(cool)
+
     return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
@@ -79,13 +82,6 @@ export function getHtml(parsedReq: ParsedRequest) {
     </style>
     <body>
         <div class="heading"><span>${sanitizeHtml(text)}</span></div>
-        <div class="separator">↑</div>
-        <div class="text">
-            <div class="inner">
-                <div class="ja">${sanitizeHtml(cool ? 'お洒落だね' : '温かいね')}</div>
-                <div class="en">${sanitizeHtml(cool ? `It's cool` : `It's not cool`)}</div>
-            </div>
-        </div>
     </body>
 </html>`;
 }
