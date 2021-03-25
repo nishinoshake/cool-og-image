@@ -34,29 +34,32 @@ function getCss() {
         color: #333;
         font-style: normal;
         color: #222;
-        line-height: 1.3;
+        line-height: 1.4;
     }
     .heading span {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         padding: 2px 4px;
-
+    }
+    .separator {
+        margin: -30px auto 52px;
+        font-size: 60px;
+        text-align: center;
     }
     .text {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 84px;
+        font-size: 64px;
         font-style: normal;
         line-height: 1.2;
+        color: #222;
     }
     .inner {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #fff;
-        background-color: #222;
     }
     .en {
         margin-left: 0.5em;
@@ -76,6 +79,7 @@ export function getHtml(parsedReq: ParsedRequest) {
     </style>
     <body>
         <div class="heading"><span>${sanitizeHtml(text)}</span></div>
+        <div class="separator">↑</div>
         <div class="text">
             <div class="inner">
                 <div class="ja">${sanitizeHtml(cool ? 'お洒落だね' : '温かいね')}</div>
