@@ -34,7 +34,7 @@ function getCss() {
         color: #333;
         font-style: normal;
         color: #222;
-        line-height: 1.6;
+        line-height: 1.8;
     }
     .heading span {
         display: -webkit-box;
